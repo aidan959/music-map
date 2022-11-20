@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="app_preferences">
+    <PreferenceCategory android:title="@string/setting_listen_sens">
+
+            <SeekBarPreference
+                android:id="@+id/sensitivity_seek_bar"
+                android:key="sensitivity_of_listener"
+                app:adjustable="true"
+                app:defaultValue="50"
+                app:iconSpaceReserved="false"
+                app:summary="The percentage of the song that needs to be listened to before recording."
+                app:title="Percentage for Listen" />
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:key="wifi enabled"
+        android:title="WiFi" />
+    <PreferenceScreen
+        android:key="second_preferencescreen"
+        android:title="WiFi settings">
+        <CheckBoxPreference
+            android:key="prefer wifi"
+            android:title="Prefer WiFi" />
+
+    </PreferenceScreen>
+</PreferenceScreen>

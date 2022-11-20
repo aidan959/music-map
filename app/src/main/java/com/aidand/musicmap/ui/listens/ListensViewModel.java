@@ -9,8 +9,6 @@ public class ListensViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public ListensViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
     }
 
     public LiveData<String> getText() {

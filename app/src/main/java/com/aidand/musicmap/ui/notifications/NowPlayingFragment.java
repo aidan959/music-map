@@ -12,19 +12,19 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.aidand.musicmap.databinding.FragmentNotificationsBinding;
+import com.aidand.musicmap.databinding.FragmentNowPlayingBinding;
 
 public class NowPlayingFragment extends Fragment {
 
     private NowPlayingViewModel nowPlayingViewModel;
-    private FragmentNotificationsBinding binding;
+    private FragmentNowPlayingBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         nowPlayingViewModel =
                 new ViewModelProvider(this).get(NowPlayingViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentNowPlayingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
